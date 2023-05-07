@@ -1,0 +1,24 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+fieldset label input {
+    margin-left: 2rem;
+}
+
+.flexRows {
+    display: flex;
+    flex-direction: column;
+}
+  
+.gridFieldset {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+}
+  
+.gridFieldset label {
+    text-align: left;
+    margin-left: 3rem;
+}
