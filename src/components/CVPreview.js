@@ -14,6 +14,7 @@ export default class CVPreview extends Component {
                 <h4 className="contact-details">
                     {this.props.generalInfo.phoneNumber} | <a href={'mailto:'+ this.props.generalInfo.email}>{this.props.generalInfo.email}</a>
                 </h4>
+                <div className="profile-description">{this.props.generalInfo.description}</div>
                 <Section name={'Education'} />
                 <div className="flexbox">
                     <div>

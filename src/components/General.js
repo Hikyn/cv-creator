@@ -7,6 +7,7 @@ export default class General extends Component {
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleEmailChange = this.handleEmailChange.bind(this);
         this.handlePhoneNumberChange = this.handlePhoneNumberChange.bind(this);
+        this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
     }
 
     handleNameChange(e) {
@@ -21,6 +22,10 @@ export default class General extends Component {
         this.props.setPhoneNumber(e.target.value);
     }
 
+    handleDescriptionChange(e) {
+        this.props.setDescription(e.target.value);
+    }
+
     render() {
         return (
             <form method='post'>
@@ -30,11 +35,13 @@ export default class General extends Component {
                         <label htmlFor='name'>Name:</label>
                         <label htmlFor='email'>Email: </label>
                         <label htmlFor='phone'>Phone number:</label>
+                        <label htmlFor='description'>Description</label>
                     </div>
                     <div className='flexRows'>
                         <input type="text" name='name' placeholder="Name" onChange={this.handleNameChange}></input>
                         <input type="email" name='email' placeholder="example@gmail.com" onChange={this.handleEmailChange}></input>
                         <input type="tel" name='phoneNumber' placeholder="79264058617" onChange={this.handlePhoneNumberChange}></input>
+                        <textarea type="text" name='description' onChange={this.handleDescriptionChange}></textarea>
                     </div>
                 </fieldset>
             </form>

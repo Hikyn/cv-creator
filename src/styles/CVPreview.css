@@ -39,3 +39,9 @@ hr {
     font-style: italic;
 }
 
+.profile-description {
+    font-style: italic;
+    text-align: start;
+    margin: 0.5rem;
+}
+

@@ -15,5 +15,6 @@ code {
 .App {
   display: grid;
   grid: 1fr / 1fr 2fr;
+  gap: 2rem;
 }
 
