@@ -30,6 +30,33 @@ class App extends Component {
     this.setGeneral = this.setGeneral.bind(this);
     this.setEducational = this.setEducational.bind(this);
     this.setPractical = this.setPractical.bind(this);
+    this.setName = this.setName.bind(this);
+    this.setEmail = this.setEmail.bind(this);
+    this.setPhoneNumber = this.setPhoneNumber.bind(this);
+  }
+
+  setName(name) {
+    this.setState({
+      general: {
+        ...this.state.general,
+        'name': name
+      }})
+  }
+
+  setEmail(email) {
+    this.setState({
+      general: {
+        ...this.state.general,
+        'email': email
+      }})
+  }
+
+  setPhoneNumber(phoneNumber) {
+    this.setState({
+      general: {
+        ...this.state.general,
+        'phoneNumber': phoneNumber
+      }})
   }
 
   setGeneral(name, email, phoneNumber) {
@@ -67,9 +94,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {console.log(this.state)}
         <CVEditor 
-          setGeneral={this.setGeneral} 
+          setName={this.setName} 
+          setEmail={this.setEmail} 
+          setPhoneNumber={this.setPhoneNumber}
+          
           setEducational={this.setEducational} 
           setPractical={this.setPractical}
         />
