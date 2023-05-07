@@ -1,3 +1,13 @@
+Test project made with 
+
+<a href="https://reactjs.org/">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</a>
+
+# Preview
+
+![Preview of cv-creator](./assets/Screenshot_49.png)
+
 ## Encountered problems and their solutions:
 
 It was a lot of work to bind every method inside constructor:
@@ -27,6 +37,13 @@ This way we use [class fields](https://github.com/tc39/proposal-class-fields) to
 
 Source: [Ross Allen](https://stackoverflow.com/questions/32192682/react-js-es6-avoid-binding-this-to-every-method)
 
+## What can be added/optimized
+
+- Use class fields instead of binding in constructor
+- Add more categories (ex. projects, tech skills)
+- Option to choose font
+- Pdf extraction
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -53,11 +70,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
