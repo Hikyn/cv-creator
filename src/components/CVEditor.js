@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './CVEditor.css';
+import '../styles/CVEditor.css';
 import General from './General';
 import Educational from './Educational';
 import Practical from './Practical';

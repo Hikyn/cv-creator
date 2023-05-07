@@ -31,7 +31,7 @@ export default class General extends Component {
                     <div className='flexRows'>
                         <input type="text" name='name' placeholder="Alice"></input>
                         <input type="email" name='email' placeholder="example@gmail.com"></input>
-                        <input type="phone" name='phoneNumber' placeholder="79264058617"></input>
+                        <input type="tel" name='phoneNumber' placeholder="79264058617"></input>
                     </div>
                 </fieldset>
                 <button type="submit">Submit</button>

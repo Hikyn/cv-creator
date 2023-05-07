@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import { Component } from 'react';
 import CVEditor from './components/CVEditor';
 import CVPreview from './components/CVPreview';
