@@ -1,3 +1,9 @@
+Test project made with 
+
+<a href="https://reactjs.org/">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</a>
+
 # Preview
 
 ![Preview of cv-creator](./assets/Screenshot_49.png)
@@ -30,6 +36,13 @@ handleSchoolNameChange = (e) => {
 This way we use [class fields](https://github.com/tc39/proposal-class-fields) to do the binding outside the constructor.
 
 Source: [Ross Allen](https://stackoverflow.com/questions/32192682/react-js-es6-avoid-binding-this-to-every-method)
+
+## What can be added/optimized
+
+- Use class fields instead of binding in constructor
+- Add more categories (ex. projects, tech skills)
+- Option to choose font
+- Pdf extraction
 
 ## Available Scripts
 
