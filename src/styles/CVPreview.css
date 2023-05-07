@@ -1,0 +1,41 @@
+h1.name {
+    margin-bottom: 0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4.contact-details {
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    margin: 0px;
+}
+
+.title,
+.description,
+.description-detailed {
+    margin-left: 2rem;
+    text-align: start;
+}
+
+.title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.description-detailed {
+    font-style: italic;
+}
+

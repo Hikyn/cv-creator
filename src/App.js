@@ -9,21 +9,21 @@ class App extends Component {
 
     this.state = {
       general: {
-        'name': '',
-        'email': '',
-        'phoneNumber': ''
+        'name': 'Name Surname',
+        'email': 'example@gmail.com',
+        'phoneNumber': '79264058xxx'
       },
       educational: {
-        'schoolName': '',
-        'studyTitle': '',
-        'dateOfStudy': ''
+        'schoolName': 'University of Michigan',
+        'studyTitle': 'Software Engineering',
+        'dateOfStudy': '2015-05-16'
       },
       practical: {
-        'companyName': '',
-        'positionTitle': '',
-        'mainTasks': '',
-        'dateFrom': '',
-        'dateUntil': ''
+        'companyName': 'Company name',
+        'positionTitle': 'Junior Backend Engineer',
+        'mainTasks': 'Mainteined client database',
+        'dateFrom': '2015-07-10',
+        'dateUntil': '2020-12-30'
       }
     }
 
@@ -73,7 +73,11 @@ class App extends Component {
           setEducational={this.setEducational} 
           setPractical={this.setPractical}
         />
-        <CVPreview />
+        <CVPreview 
+          generalInfo={this.state.general} 
+          educationalInfo={this.state.educational} 
+          practicalInfo={this.state.practical}
+        />
       </div>
     );
   }

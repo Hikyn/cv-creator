@@ -29,7 +29,7 @@ export default class General extends Component {
                         <label htmlFor='phone'>Phone number:</label>
                     </div>
                     <div className='flexRows'>
-                        <input type="text" name='name' placeholder="Alice"></input>
+                        <input type="text" name='name' placeholder="Name"></input>
                         <input type="email" name='email' placeholder="example@gmail.com"></input>
                         <input type="tel" name='phoneNumber' placeholder="79264058617"></input>
                     </div>
