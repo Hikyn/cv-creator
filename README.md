@@ -6,6 +6,8 @@ Test project made with
 
 # Preview
 
+https://hikyn.github.io/cv-creator/
+
 ![Preview of cv-creator](./assets/Screenshot_49.png)
 
 ## Encountered problems and their solutions:
