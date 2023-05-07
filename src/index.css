@@ -36,3 +36,8 @@ fieldset label input {
   display: grid;
   grid: 1fr / 1fr 1fr;
 }
+
+.gridFieldset label {
+  text-align: left;
+  margin-left: 3rem;
+}
