@@ -8,13 +8,14 @@ fieldset label input {
     margin-left: 2rem;
 }
 
-.flexRows {
+.gridRows {
     display: grid;
     flex-direction: column;
-    grid: 1fr / 1fr 1fr;
+    grid: 1fr/ 1fr 1fr;
 }
   
-.flexRows label {
+.gridRows label {
     text-align: left;
-    margin-left: 3rem;
+    margin-left: min(3rem, 5vw);
+    min-width: 10rem;
 }

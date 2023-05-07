@@ -26,7 +26,7 @@ export default class General extends Component {
             <form method='post'>
                 <fieldset>
                     <legend>General information: </legend>
-                    <div className='flexRows'>
+                    <div className='gridRows'>
                         <label htmlFor='name'>Name:</label>
                         <input type="text" name='name' placeholder="Name Surname" onChange={this.handleNameChange}></input>
                         <label htmlFor='email'>Email: </label>

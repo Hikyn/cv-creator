@@ -23,7 +23,7 @@ export default class Educational extends Component {
             <form method='post'>
                 <fieldset>
                     <legend>Education: </legend>
-                    <div className='flexRows'>
+                    <div className='gridRows'>
                         <label htmlFor='schoolName'>Study organization:</label>
                         <input type="text" name='schoolName' placeholder="University of Michigan" onChange={this.handleSchoolNameChange}></input>
                         <label htmlFor='studyTitle'>Study title:</label>

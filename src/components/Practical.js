@@ -30,7 +30,7 @@ export default class Practical extends Component {
             <form method='post' onSubmit={this.handleSubmit}>
                 <fieldset>
                     <legend>Practical experience: </legend>
-                    <div className='flexRows'>
+                    <div className='gridRows'>
                         <label htmlFor='companyName'>Company name:</label>
                         <input type="text" name='companyName' placeholder="Company name" onChange={this.handleCompanyNameChange}></input>
                         <label htmlFor='positionTitle'>Position title:</label>
