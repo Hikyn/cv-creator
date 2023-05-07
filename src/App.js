@@ -28,12 +28,20 @@ class App extends Component {
       }
     }
 
-    this.setEducational = this.setEducational.bind(this);
-    this.setPractical = this.setPractical.bind(this);
     this.setName = this.setName.bind(this);
     this.setEmail = this.setEmail.bind(this);
     this.setPhoneNumber = this.setPhoneNumber.bind(this);
     this.setDescription = this.setDescription.bind(this);
+
+    this.setSchoolName = this.setSchoolName.bind(this);
+    this.setStudyTitle = this.setStudyTitle.bind(this);
+    this.setDateOfStudy = this.setDateOfStudy.bind(this);
+
+    this.setCompanyName = this.setCompanyName.bind(this);
+    this.setPositionTitle = this.setPositionTitle.bind(this);
+    this.setMainTasks = this.setMainTasks.bind(this);
+    this.setDateFrom = this.setDateFrom.bind(this);
+    this.setDateUntil = this.setDateUntil.bind(this);
   }
 
   setName(name) {
@@ -68,14 +76,68 @@ class App extends Component {
       }})
   }
 
-  setEducational(schoolName, studyTitle, dateOfStudy) {
+  setSchoolName(schoolName) {
     this.setState({
       educational: {
-        'schoolName': schoolName,
-        'studyTitle': studyTitle,
+        ...this.state.educational,
+        'schoolName': schoolName
+      }})
+  }
+
+  setStudyTitle(studyTitle) {
+    this.setState({
+      educational: {
+        ...this.state.educational,
+        'studyTitle': studyTitle
+      }})
+  }
+
+  setDateOfStudy(dateOfStudy) {
+    this.setState({
+      educational: {
+        ...this.state.educational,
         'dateOfStudy': dateOfStudy
-      },
-    })
+      }})
+  }
+
+  setCompanyName(companyName) {
+    this.setState({
+      practical: {
+        ...this.state.practical,
+        'companyName': companyName
+      }})
+  }
+
+  setPositionTitle(positionTitle) {
+    this.setState({
+      practical: {
+        ...this.state.practical,
+        'positionTitle': positionTitle
+      }})
+  }
+
+  setMainTasks(mainTasks) {
+    this.setState({
+      practical: {
+        ...this.state.practical,
+        'mainTasks': mainTasks
+      }})
+  }
+
+  setDateFrom(dateFrom) {
+    this.setState({
+      practical: {
+        ...this.state.practical,
+        'dateFrom': dateFrom
+      }})
+  }
+
+  setDateUntil(dateUntil) {
+    this.setState({
+      practical: {
+        ...this.state.practical,
+        'dateUntil': dateUntil
+      }})
   }
 
   setPractical(companyName, positionTitle, mainTasks, dateFrom, dateUntil) {
@@ -99,8 +161,15 @@ class App extends Component {
           setPhoneNumber={this.setPhoneNumber}
           setDescription={this.setDescription}
 
-          setEducational={this.setEducational} 
-          setPractical={this.setPractical}
+          setSchoolName={this.setSchoolName}
+          setStudyTitle={this.setStudyTitle}
+          setDateOfStudy={this.setDateOfStudy}
+
+          setCompanyName={this.setCompanyName}
+          setPositionTitle={this.setPositionTitle}
+          setMainTasks={this.setMainTasks}
+          setDateFrom={this.setDateFrom}
+          setDateUntil={this.setDateUntil}
         />
         <CVPreview 
           generalInfo={this.state.general} 

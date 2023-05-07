@@ -29,18 +29,16 @@ export default class General extends Component {
     render() {
         return (
             <form method='post'>
-                <fieldset className="gridFieldset">
+                <fieldset>
                     <legend>General information: </legend>
                     <div className='flexRows'>
                         <label htmlFor='name'>Name:</label>
+                        <input type="text" name='name' placeholder="Name Surname" onChange={this.handleNameChange}></input>
                         <label htmlFor='email'>Email: </label>
-                        <label htmlFor='phone'>Phone number:</label>
-                        <label htmlFor='description'>Description</label>
-                    </div>
-                    <div className='flexRows'>
-                        <input type="text" name='name' placeholder="Name" onChange={this.handleNameChange}></input>
                         <input type="email" name='email' placeholder="example@gmail.com" onChange={this.handleEmailChange}></input>
+                        <label htmlFor='phone'>Phone number:</label>
                         <input type="tel" name='phoneNumber' placeholder="79264058617" onChange={this.handlePhoneNumberChange}></input>
+                        <label htmlFor='description'>Description:</label>
                         <textarea type="text" name='description' onChange={this.handleDescriptionChange}></textarea>
                     </div>
                 </fieldset>

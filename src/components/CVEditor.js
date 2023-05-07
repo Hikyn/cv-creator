@@ -18,8 +18,18 @@ export default class CVEditor extends Component {
                     setPhoneNumber={this.props.setPhoneNumber}
                     setDescription={this.props.setDescription}
                 />
-                <Educational submitInfo={this.props.setEducational}/>
-                <Practical submitInfo={this.props.setPractical}/>
+                <Educational 
+                    setSchoolName={this.props.setSchoolName}
+                    setStudyTitle={this.props.setStudyTitle}
+                    setDateOfStudy={this.props.setDateOfStudy}
+                />
+                <Practical 
+                    setCompanyName={this.props.setCompanyName}
+                    setPositionTitle={this.props.setPositionTitle}
+                    setMainTasks={this.props.setMainTasks}
+                    setDateFrom={this.props.setDateFrom}
+                    setDateUntil={this.props.setDateUntil}
+                />
             </div>
         )
     }

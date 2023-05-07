@@ -4,46 +4,51 @@ export default class Practical extends Component {
     constructor(props) {
         super(props)
 
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleCompanyNameChange = this.handleCompanyNameChange.bind(this);
+        this.handlePositionTitleChange = this.handlePositionTitleChange.bind(this);
+        this.handleMainTasksChange = this.handleMainTasksChange.bind(this);
+        this.handleDateFromChange = this.handleDateFromChange.bind(this);
+        this.handleDateUntilChange = this.handleDateUntilChange.bind(this);
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
+    handleCompanyNameChange(e) {
+        this.props.setCompanyName(e.target.value);
+    }
 
-        const form = e.target;
-        const formData = new FormData(form);
-        const formJson = Object.fromEntries(formData.entries());
-        console.log(formJson);
+    handlePositionTitleChange(e) {
+        this.props.setPositionTitle(e.target.value);
+    }
 
-        this.props.submitInfo(
-            formJson.companyName, 
-            formJson.positionTitle, 
-            formJson.mainTasks, 
-            formJson.dateFrom, 
-            formJson.dateUntil);
+    handleMainTasksChange(e) {
+        this.props.setMainTasks(e.target.value);
+    }
+
+    handleDateFromChange(e) {
+        this.props.setDateFrom(e.target.value);
+    }
+
+    handleDateUntilChange(e) {
+        this.props.setDateUntil(e.target.value);
     }
 
     render() {
         return (
             <form method='post' onSubmit={this.handleSubmit}>
-                <fieldset className="gridFieldset">
+                <fieldset>
                     <legend>Practical experience: </legend>
                     <div className='flexRows'>
                         <label htmlFor='companyName'>Company name:</label>
+                        <input type="text" name='companyName' placeholder="Company name" onChange={this.handleCompanyNameChange}></input>
                         <label htmlFor='positionTitle'>Position title:</label>
+                        <input type="text" name='positionTitle' placeholder="Junior Backend Engineer" onChange={this.handlePositionTitleChange}></input>
                         <label htmlFor='mainTasks'>Main tasks:</label>
+                        <textarea type="text" name='mainTasks' placeholder="Mainteined client database" onChange={this.handleMainTasksChange}></textarea>
                         <label htmlFor='dateFrom'>Start date: </label>
+                        <input type="date" name='dateFrom' onChange={this.handleDateFromChange}></input>
                         <label htmlFor='phone'>End date: </label>
-                    </div>
-                    <div className='flexRows'>
-                        <input type="text" name='companyName' placeholder="Company name"></input>
-                        <input type="text" name='positionTitle' placeholder="Junior Backend Engineer"></input>
-                        <input type="text" name='mainTasks' placeholder="Mainteined client database"></input>
-                        <input type="date" name='dateFrom'></input>
-                        <input type="date" name='dateUntil'></input>
+                        <input type="date" name='dateUntil' onChange={this.handleDateUntilChange}></input>
                     </div>
                 </fieldset>
-                <button type="submit">Submit</button>
             </form>
         )
     }

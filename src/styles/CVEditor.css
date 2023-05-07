@@ -9,16 +9,12 @@ fieldset label input {
 }
 
 .flexRows {
-    display: flex;
-    flex-direction: column;
-}
-  
-.gridFieldset {
     display: grid;
+    flex-direction: column;
     grid: 1fr / 1fr 1fr;
 }
   
-.gridFieldset label {
+.flexRows label {
     text-align: left;
     margin-left: 3rem;
 }
