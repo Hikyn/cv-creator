@@ -3,26 +3,21 @@ import { Component } from "react";
 export default class General extends Component {
     constructor(props) {
         super(props)
-
-        this.handleNameChange = this.handleNameChange.bind(this);
-        this.handleEmailChange = this.handleEmailChange.bind(this);
-        this.handlePhoneNumberChange = this.handlePhoneNumberChange.bind(this);
-        this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
     }
 
-    handleNameChange(e) {
+    handleNameChange = (e) => {
         this.props.setName(e.target.value);
     }
 
-    handleEmailChange(e) {
+    handleEmailChange = (e) => {
         this.props.setEmail(e.target.value);
     }
 
-    handlePhoneNumberChange(e) {
+    handlePhoneNumberChange = (e) => {
         this.props.setPhoneNumber(e.target.value);
     }
 
-    handleDescriptionChange(e) {
+    handleDescriptionChange = (e) => {
         this.props.setDescription(e.target.value);
     }
 

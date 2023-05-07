@@ -3,31 +3,25 @@ import { Component } from "react";
 export default class Practical extends Component {
     constructor(props) {
         super(props)
-
-        this.handleCompanyNameChange = this.handleCompanyNameChange.bind(this);
-        this.handlePositionTitleChange = this.handlePositionTitleChange.bind(this);
-        this.handleMainTasksChange = this.handleMainTasksChange.bind(this);
-        this.handleDateFromChange = this.handleDateFromChange.bind(this);
-        this.handleDateUntilChange = this.handleDateUntilChange.bind(this);
     }
 
-    handleCompanyNameChange(e) {
+    handleCompanyNameChange = (e) => {
         this.props.setCompanyName(e.target.value);
     }
 
-    handlePositionTitleChange(e) {
+    handlePositionTitleChange = (e) => {
         this.props.setPositionTitle(e.target.value);
     }
 
-    handleMainTasksChange(e) {
+    handleMainTasksChange = (e) => {
         this.props.setMainTasks(e.target.value);
     }
 
-    handleDateFromChange(e) {
+    handleDateFromChange = (e) => {
         this.props.setDateFrom(e.target.value);
     }
 
-    handleDateUntilChange(e) {
+    handleDateUntilChange = (e) => {
         this.props.setDateUntil(e.target.value);
     }
 

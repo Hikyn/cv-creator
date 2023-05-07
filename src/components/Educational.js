@@ -3,21 +3,17 @@ import { Component } from "react";
 export default class Educational extends Component {
     constructor(props) {
         super(props)
-
-        this.handleSchoolNameChange = this.handleSchoolNameChange.bind(this);
-        this.handleStudyTitleChange = this.handleStudyTitleChange.bind(this);
-        this.handleDateOfStudyChange = this.handleDateOfStudyChange.bind(this);
     }
 
-    handleSchoolNameChange(e) {
+    handleSchoolNameChange = (e) => {
         this.props.setSchoolName(e.target.value);
     }
 
-    handleStudyTitleChange(e) {
+    handleStudyTitleChange = (e) => {
         this.props.setStudyTitle(e.target.value);
     }
 
-    handleDateOfStudyChange(e) {
+    handleDateOfStudyChange = (e) => {
         this.props.setDateOfStudy(e.target.value);
     }
 
