@@ -26,28 +26,22 @@ export default class Practical extends Component {
     render() {
         return (
             <form method='post' onSubmit={this.handleSubmit}>
-                <fieldset>
+                <fieldset className="gridFieldset">
                     <legend>Practical experience: </legend>
-                    <label>
-                        Company name: 
+                    <div className='flexRows'>
+                        <label htmlFor='companyName'>Company name:</label>
+                        <label htmlFor='positionTitle'>Position title:</label>
+                        <label htmlFor='mainTasks'>Main tasks:</label>
+                        <label htmlFor='dateFrom'>Start date: </label>
+                        <label htmlFor='phone'>End date: </label>
+                    </div>
+                    <div className='flexRows'>
                         <input type="text" name='companyName' placeholder="Company name"></input>
-                    </label>
-                    <label>
-                        Position title: 
                         <input type="text" name='positionTitle' placeholder="Junior Backend Engineer"></input>
-                    </label>
-                    <label>
-                        Main tasks: 
                         <input type="text" name='mainTasks' placeholder="Mainteined client database"></input>
-                    </label>
-                    <label>
-                        Start date: 
                         <input type="date" name='dateFrom'></input>
-                    </label>
-                    <label>
-                        End date: 
                         <input type="date" name='dateUntil'></input>
-                    </label>
+                    </div>
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>

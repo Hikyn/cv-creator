@@ -21,20 +21,18 @@ export default class General extends Component {
     render() {
         return (
             <form method='post' onSubmit={this.handleSubmit}>
-                <fieldset>
+                <fieldset className="gridFieldset">
                     <legend>General information: </legend>
-                    <label>
-                        Name: 
+                    <div className='flexRows'>
+                        <label htmlFor='name'>Name:</label>
+                        <label htmlFor='email'>Email: </label>
+                        <label htmlFor='phone'>Phone number:</label>
+                    </div>
+                    <div className='flexRows'>
                         <input type="text" name='name' placeholder="Alice"></input>
-                    </label>
-                    <label>
-                        Email: 
                         <input type="email" name='email' placeholder="example@gmail.com"></input>
-                    </label>
-                    <label>
-                        Phone number: 
                         <input type="phone" name='phoneNumber' placeholder="79264058617"></input>
-                    </label>
+                    </div>
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>

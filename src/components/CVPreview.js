@@ -7,7 +7,7 @@ export default class CVPreview extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>LALALALLALAL</div>
         )
     }
 }

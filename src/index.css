@@ -21,3 +21,18 @@ fieldset {
 fieldset label input {
   margin-left: 2rem;
 }
+
+.App {
+  display: grid;
+  grid: 1fr / 1fr 2fr;
+}
+
+.flexRows {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridFieldset {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+}

@@ -10,11 +10,11 @@ export default class CVEditor extends Component {
 
     render() {
         return (
-            <>
-            <General submitInfo={this.props.setGeneral}/>
-            <Educational submitInfo={this.props.setEducational}/>
-            <Practical submitInfo={this.props.setPractical}/>
-            </>
+            <div className="CVEditor">
+                <General submitInfo={this.props.setGeneral}/>
+                <Educational submitInfo={this.props.setEducational}/>
+                <Practical submitInfo={this.props.setPractical}/>
+            </div>
         )
     }
 }
