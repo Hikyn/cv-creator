@@ -1,3 +1,7 @@
+# Preview
+
+![Preview of cv-creator](./assets/Screenshot_49.png)
+
 ## Encountered problems and their solutions:
 
 It was a lot of work to bind every method inside constructor:
