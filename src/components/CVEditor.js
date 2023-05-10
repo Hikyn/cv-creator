@@ -7,22 +7,13 @@ function CVEditor(props) {
     return (
         <div className="CVEditor">
             <General 
-                setName={props.setName} 
-                setEmail={props.setEmail} 
-                setPhoneNumber={props.setPhoneNumber}
-                setDescription={props.setDescription}
+                setGeneral={props.setGeneral} 
             />
             <Educational 
-                setSchoolName={props.setSchoolName}
-                setStudyTitle={props.setStudyTitle}
-                setDateOfStudy={props.setDateOfStudy}
+                setEducational={props.setEducational}
             />
             <Practical 
-                setCompanyName={props.setCompanyName}
-                setPositionTitle={props.setPositionTitle}
-                setMainTasks={props.setMainTasks}
-                setDateFrom={props.setDateFrom}
-                setDateUntil={props.setDateUntil}
+                setPractical={props.setPractical}
             />
         </div>
     )

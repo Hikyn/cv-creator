@@ -1,4 +1,34 @@
-function Practical({setCompanyName, setPositionTitle, setMainTasks, setDateFrom, setDateUntil}) {
+function Practical({setPractical}) {
+    const setCompanyName = (companyName) => {
+        setPractical(oldPractical => 
+            ({...oldPractical, companyName: companyName})
+        )
+    }
+
+    const setPositionTitle = (positionTitle) => {
+        setPractical(oldPractical => 
+            ({...oldPractical, positionTitle: positionTitle})
+        )
+    }
+
+    const setMainTasks = (mainTasks) => {
+        setPractical(oldPractical => 
+            ({...oldPractical, mainTasks: mainTasks})
+        )
+    }
+
+    const setDateFrom = (dateFrom) => {
+        setPractical(oldPractical => 
+            ({...oldPractical, dateFrom: dateFrom})
+        )
+    }
+
+    const setDateUntil = (dateUntil) => {
+        setPractical(oldPractical => 
+            ({...oldPractical, dateUntil: dateUntil})
+        )
+    }
+
     const handleCompanyNameChange = (e) => {
         setCompanyName(e.target.value);
     }

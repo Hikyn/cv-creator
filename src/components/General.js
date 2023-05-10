@@ -1,4 +1,28 @@
-function General({setName, setEmail, setPhoneNumber, setDescription}) {
+function General({setGeneral}) {
+    const setName = (name) => {
+        setGeneral(oldGeneral => 
+            ({...oldGeneral, name: name})
+        )
+    }
+
+    const setEmail = (email) => {
+        setGeneral(oldGeneral => 
+            ({...oldGeneral, email: email})
+        )
+    }
+
+    const setPhoneNumber = (phoneNumber) => {
+        setGeneral(oldGeneral => 
+            ({...oldGeneral, phoneNumber: phoneNumber})
+        )
+    }
+
+    const setDescription = (description) => {
+        setGeneral(oldGeneral => 
+            ({...oldGeneral, description: description})
+        )
+    }
+    
     const handleNameChange = (e) => {
         setName(e.target.value);
     }

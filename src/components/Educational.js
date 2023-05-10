@@ -1,6 +1,24 @@
 import { Component } from "react";
 
-function Educational({setSchoolName, setStudyTitle, setDateOfStudy}) {
+function Educational({setEducational}) {
+    const setSchoolName = (schoolName) => {
+        setEducational(oldEducational => 
+            ({...oldEducational, schoolName: schoolName})
+        )
+    }
+
+    const setStudyTitle = (studyTitle) => {
+        setEducational(oldEducational => 
+            ({...oldEducational, studyTitle: studyTitle})
+        )
+    }
+
+    const setDateOfStudy = (dateOfStudy) => {
+        setEducational(oldEducational => 
+            ({...oldEducational, dateOfStudy: dateOfStudy})
+        )
+    }
+
      const handleSchoolNameChange = (e) => {
         setSchoolName(e.target.value);
     }
