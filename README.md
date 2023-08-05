@@ -19,7 +19,7 @@ First project made with
 
 # Preview
 
-https://hikyn.github.io/cv-creator/
+https://cvcreator.hikyn.dev/
 
 ![Preview of cv-creator](./assets/Screenshot_49.png)
 
