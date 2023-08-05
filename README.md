@@ -17,9 +17,11 @@ First project made with
 </a>
 
 
-# Preview
+# Live at:
 
 https://cvcreator.hikyn.dev/
+
+<b>View my full portfolio</b>: https://hikyn.dev/
 
 ![Preview of cv-creator](./assets/Screenshot_49.png)
 
