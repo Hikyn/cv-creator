@@ -1,4 +1,4 @@
-Test project made with 
+Test project made with
 
 <a href="https://reactjs.org/">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -13,6 +13,7 @@ https://hikyn.github.io/cv-creator/
 ## Encountered problems and their solutions:
 
 It was a lot of work to bind every method inside constructor:
+
 ```js
 constructor(props) {
     super(props)
@@ -22,7 +23,9 @@ constructor(props) {
     this.handleDateOfStudyChange = this.handleDateOfStudyChange.bind(this);
 }
 ```
+
 For methods like this:
+
 ```js
 handleSchoolNameChange(e) {
     this.props.setSchoolName(e.target.value);
@@ -30,11 +33,13 @@ handleSchoolNameChange(e) {
 ```
 
 To make it less tedious we can write methods like this:
+
 ```js
 handleSchoolNameChange = (e) => {
-    this.props.setSchoolName(e.target.value);
-}
+  this.props.setSchoolName(e.target.value);
+};
 ```
+
 This way we use [class fields](https://github.com/tc39/proposal-class-fields) to do the binding outside the constructor.
 
 Source: [Ross Allen](https://stackoverflow.com/questions/32192682/react-js-es6-avoid-binding-this-to-every-method)
